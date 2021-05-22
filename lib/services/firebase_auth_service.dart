@@ -10,7 +10,7 @@ class FirebaseAuthService {
 
   // GET UID
   Future<String> getCurrentUID() async {
-    return (_firebaseAuth.currentUser).uid;
+    return (_firebaseAuth.currentUser)!.uid;
   }
 
   // GET CURRENT USER
@@ -27,8 +27,8 @@ class FirebaseAuthService {
     return authResult.user!.uid;
   }
 
-  Future updateUserName(String name, User currentUser) async {
-    await currentUser.updateProfile(displayName: name);
+  Future updateUserName(String name, User? currentUser) async {
+    await currentUser!.updateProfile(displayName: name);
     await currentUser.reload();
   }
 
