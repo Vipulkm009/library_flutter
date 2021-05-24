@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:auto_size_text/auto_size_text.dart';
+// ignore: import_of_legacy_library_into_null_safe
+// import 'package:auto_size_text/auto_size_text.dart';
+import 'package:library_flutter/views/login.dart';
+import 'package:library_flutter/views/register.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'WelcomeScreen';
@@ -19,7 +22,7 @@ class _WelcomeScreen extends State<WelcomeScreen> {
         child: Container(
           height: _height,
           width: _width,
-          color: Theme.of(context).appBarTheme.color,
+          color: Colors.blue,
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -31,8 +34,9 @@ class _WelcomeScreen extends State<WelcomeScreen> {
                 ),
                 Text(
                   'Welcome to Best Friend',
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.dancingScript(
-                    fontSize: 75.0,
+                    fontSize: 60.0,
                     color: Colors.white,
                   ),
                 ),
@@ -40,7 +44,7 @@ class _WelcomeScreen extends State<WelcomeScreen> {
                   height: _height * 0.10,
                   width: _width,
                 ),
-                AutoSizeText(
+                Text(
                   'Books are the best friends of humans.',
                   maxLines: 3,
                   textAlign: TextAlign.center,
@@ -54,7 +58,7 @@ class _WelcomeScreen extends State<WelcomeScreen> {
                   width: _width,
                 ),
                 RaisedButton(
-                  color: Theme.of(context).appBarTheme.iconTheme.color,
+                  color: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
@@ -73,7 +77,7 @@ class _WelcomeScreen extends State<WelcomeScreen> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, Register.id);
+                    Navigator.pushNamed(context, RegisterScreen.id);
                   },
                 ),
                 SizedBox(
@@ -90,7 +94,7 @@ class _WelcomeScreen extends State<WelcomeScreen> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, Login.id);
+                    Navigator.pushNamed(context, LoginScreen.id);
                   },
                 ),
               ],

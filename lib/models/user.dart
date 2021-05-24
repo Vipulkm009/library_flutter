@@ -1,10 +1,10 @@
-class UserProfile {
+class UserData {
   String uid;
   String name;
   String email;
   String password;
 
-  UserProfile(
+  UserData(
       {required this.name,
       required this.email,
       required this.password,

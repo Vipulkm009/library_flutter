@@ -1,10 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:library_flutter/widgets/customized_form.dart';
 
 class RegisterScreen extends StatelessWidget {
-  const RegisterScreen({Key key}) : super(key: key);
+  static String id = "Register";
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      drawer: Drawer(),
+      appBar: AppBar(
+        title: Text(
+          'Registration',
+        ),
+      ),
+      body: SafeArea(
+        child: Container(
+          child: Center(
+            child: CustomizedForm(),
+          ),
+        ),
+      ),
+    );
   }
 }
