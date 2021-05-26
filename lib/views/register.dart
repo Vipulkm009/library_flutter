@@ -7,7 +7,6 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
       appBar: AppBar(
         title: Text(
           'Registration',
@@ -15,7 +14,7 @@ class RegisterScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          child: Center(
+          child: SingleChildScrollView(
             child: CustomizedForm(),
           ),
         ),
