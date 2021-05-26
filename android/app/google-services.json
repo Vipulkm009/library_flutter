@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "218563077618",
+    "project_id": "flutter-parking-app-1",
+    "storage_bucket": "flutter-parking-app-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218563077618:android:81ffe358fcf9fb31b9776b",
+        "android_client_info": {
+          "package_name": "com.vipulkm.library_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218563077618-hpdo6vvtkn6p3l28rrrialkpllam1a9q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vipulkm.library_flutter",
+            "certificate_hash": "acfc35ce742bd2c3db820e44956e978658cde7d6"
+          }
+        },
+        {
+          "client_id": "218563077618-bl2ag4rnecikdt7sb0dj9mui099ssfrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA11hMSVS1AkP8KNAjzTfikBUarO3d0lBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218563077618-bl2ag4rnecikdt7sb0dj9mui099ssfrk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
