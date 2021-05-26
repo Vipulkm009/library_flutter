@@ -1,10 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:library_flutter/utilities/dimension_config.dart';
 import 'package:library_flutter/views/login.dart';
+import 'package:library_flutter/views/login_phone.dart';
 import 'package:library_flutter/views/register.dart';
 import 'package:library_flutter/views/welcome_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -19,9 +23,10 @@ class MyApp extends StatelessWidget {
             DimensionConfig().init(constraints, orientation);
             return MaterialApp(
               title: 'Flutter Demo',
-              home: WelcomeScreen(),
-              initialRoute: WelcomeScreen.id,
+              home: LoginPhoneScreen(),
+              initialRoute: LoginPhoneScreen.id,
               routes: {
+                LoginPhoneScreen.id: (context) => LoginPhoneScreen(),
                 WelcomeScreen.id: (context) => WelcomeScreen(),
                 LoginScreen.id: (context) => LoginScreen(),
                 RegisterScreen.id: (context) => RegisterScreen(),
